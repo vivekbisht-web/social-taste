@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "SocialTaste",
+    "slug": "SocialTaste",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/iconsActual.png",
+    "scheme": "socialtaste",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "SocialTaste uses FaceID to secure your account privacy."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/iconsActual.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.nikita_bhandari.SocialTaste"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/iconsActual.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/iconsActual.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-secure-store",
+      "@react-native-community/datetimepicker",
+      "expo-local-authentication"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6f2fa182-a4a7-4c78-a943-895b2377ecb6"
+      }
+    }
+  }
+}
